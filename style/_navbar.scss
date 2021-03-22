@@ -1,0 +1,84 @@
+.navbar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(82, 149, 236);
+
+    .logo{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+
+    .menu{
+        width: 25%;
+        height: 100%;
+        margin-right: 20px;
+
+
+        .list{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            font-size: large;
+            
+
+            .list-items{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease-in all ;
+                // &:nth-child(1){
+                //     margin-right: 5px;
+                // }
+                // &:nth-child(2){
+                //     margin-right: 5px;
+                // }
+                &:hover{
+                    background-color:gray;
+                    color: white;
+                    width: 40%;
+                    height: 110%;
+                }
+                
+            }
+        }
+    }
+
+}
+.active-home{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(9, 243, 165);
+    cursor: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background-color:gray;
+        color: white;
+    }
+}
